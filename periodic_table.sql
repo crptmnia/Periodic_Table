@@ -150,6 +150,14 @@ ALTER TABLE ONLY public.elements
 
 
 --
+-- Name: properties fk_atomic_number; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.properties
+    ADD CONSTRAINT fk_atomic_number FOREIGN KEY (atomic_number) REFERENCES public.elements(atomic_number);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
